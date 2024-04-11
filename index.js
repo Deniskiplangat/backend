@@ -72,9 +72,6 @@ app.post('/users', async(req,res)=>{
 
     } catch (error) {
         res.send(error)
-    }finally {
-        // await poolModule.releaseConn(conn);
-        conn.release()
     }
 }
 )
